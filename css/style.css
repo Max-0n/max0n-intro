@@ -1,0 +1,31 @@
+/*
+Theme Name: Max0n
+Author: Максим Рожков
+Author URI: https://artweb.io
+Version: 1.0
+Tags: css, html, php, javascript, json, jquery, svg, canvas, 
+*/
+
+html, body{
+	margin: 0;
+	padding: 0;
+	height: auto;
+	overflow: auto;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #333;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+body{
+	background: white;
+	position: relative;
+	overflow: hidden;
+}
+h1{
+	display: block;
+	width: 100%;
+	text-align: center;
+	margin-top: 200px;
+}
