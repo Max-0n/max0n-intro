@@ -1,3 +1,3 @@
 # Intro max0n
 
-![Latest Stable Version](/preview.png)
+![Latest Stable Version](/preview.gif)
