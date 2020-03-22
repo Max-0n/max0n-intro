@@ -1,0 +1,57 @@
+#intro {
+	fill: none;
+	stroke: #FFFFFF;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 200;
+	stroke-dashoffset: 199.9;
+	stroke-width: 0;
+	animation: zoom .7s 1.5s 1 normal cubic-bezier(0.890, 0.000, 0.950, -0.150) forwards;
+}
+
+#fading {
+	animation: fade .2s 2s 1 normal ease forwards;
+}
+
+.path1_0 { animation: points .5s 0s 1 normal ease-in-out forwards, dash1 1s .1s 1 normal ease-in-out forwards; }
+.path1_1 { animation: points .5s 0s 1 normal ease-in-out forwards, mT 1s .1s 1 normal ease-in-out forwards; }
+.path1_2 { animation: points .5s 0s 1 normal ease-in-out forwards, dash1 1s .1s 1 normal ease-in-out forwards; }
+.path2 { animation: points .5s .1s 1 normal ease-in-out forwards, dash2 1s .2s 1 normal ease-in-out forwards; }
+.path3 { animation: points .5s .2s 1 normal ease-in-out forwards, dash3 1s .3s 1 normal ease-in-out forwards; }
+.path4 { animation: points .5s .3s 1 normal ease-in-out forwards, dash4 1s .4s 1 normal ease-in-out forwards; }
+.path5 { animation: points .5s .4s 1 normal ease-in-out forwards, dash5 1s .5s 1 normal ease-in-out forwards; }
+.path6 { animation: points .5s .5s 1 normal ease-in-out forwards, dash6 1s .6s 1 normal ease-in-out forwards; }
+
+/* Draw lines START */
+@keyframes dash1 { from { stroke-dashoffset: 199.9; } to { stroke-dashoffset: 162; } }
+@keyframes dash2 { from { stroke-dashoffset: 199.9; } to { stroke-dashoffset: 108; } }
+@keyframes dash3 { from { stroke-dashoffset: 199.9; } to { stroke-dashoffset: 189; } }
+@keyframes dash4 { from { stroke-dashoffset: 199.9; } to { stroke-dashoffset: 41; } }
+@keyframes dash5 { from { stroke-dashoffset: 199.9; } to { stroke-dashoffset: 142; } }
+@keyframes dash6 { from { stroke-dashoffset: 199.9; } to { stroke-dashoffset: 188; } }
+/* Draw lines END */
+
+// Show points
+@keyframes points {
+	from { stroke-width: 0; }
+	to { stroke-width: 15; }
+}
+
+// Scale intro
+@keyframes zoom {
+	from { transform: scale(1); }
+	to { transform: scale(20); }
+}
+
+// Move form bottom START
+@keyframes mT {
+	from { transform: translate(0px, 40px); }
+	to { transform: translate(0, 0); }
+}
+
+// Fade logo
+@keyframes fade {
+	from { opacity: 1; }
+	to{ opacity: 0; }
+}

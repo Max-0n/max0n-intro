@@ -1,0 +1,64 @@
+/*
+Theme Name: Max0n
+Author: Максим Рожков
+Version: 1.0
+Tags: css, html, php, javascript, json, jquery, svg, canvas,
+*/
+@import 'intro';
+
+::selection { background: #faec73; }
+
+body {
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Gilroy, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+  box-sizing: border-box;
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
+  transition: background-color .3s ease-in-out;
+  background-color: #fff;
+
+  @media (prefers-color-scheme: dark) {
+    // background-color: #1e2f40;
+  }
+}
+
+#fading {
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(to top, #056dad, #6bc6ff);
+	z-index: 10;
+
+	svg#intro {
+		display: block;
+		min-width: 260px;
+		max-width: 400px;
+		width: calc(100% - 20px);
+		max-height: 100px;
+		height: 100%;
+	}
+}
+
+.wrapper {
+  display: flex;
+}
+
+figure {
+  margin: 10px;
+  text-align: center;
+
+  figcaption {
+    padding: 7px 5px;
+    font-style: italic;
+    color: #999;
+  }
+}
