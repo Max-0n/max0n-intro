@@ -50,6 +50,8 @@ body {
 
 .wrapper {
   display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 figure {
